@@ -95,6 +95,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
 
 //Allow Cross Origin Requests
+//Not sure that there was an issue with this one, afterall.
 app.use(function (req, res, next) {
   res.set('Access-Control-Allow-Origin', '*');
   next();
